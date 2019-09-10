@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 ########### Pick variables
 tabtitle='dog breeds'
 myheading = 'Breeds of Dogs'
-myfavoritecolor='#C74A2F' # More colors are here: https://htmlcolorcodes.com/
+myfavoritecolor='#0B5AAE' # More colors are here: https://htmlcolorcodes.com/
 x_list=['Australian Cattle Dogs', 'French Bulldogs', 'Corgis', 'Pugs']
 y_list=[12, 4, 6, 5]
 mytitle='My favorite dog breeds'
@@ -18,8 +18,8 @@ mydata = [go.Bar(x=x_list,
                 marker=dict(color=myfavoritecolor))]
 mylayout = go.Layout(
     title = mytitle,
-    xaxis = dict(title = 'Labels go here!'),
-    yaxis = dict(title = 'Numbers go here!'))
+    xaxis = dict(title = 'Dog Breed Names'),
+    yaxis = dict(title = 'Favorites'))
 myfigure = go.Figure(data=mydata, layout=mylayout)
 
 ########### Initiate the app
